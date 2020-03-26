@@ -21,7 +21,7 @@
 
             // load footer
             include 'view/site/footer.php';
-        ?>
+        ?>  
     </div>
 </body>
 </html>

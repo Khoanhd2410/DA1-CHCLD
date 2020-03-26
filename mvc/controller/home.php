@@ -7,7 +7,7 @@
         $action=($_GET['act']);
     switch($action)
     {
-        case "home":
+        case "index":
             
         include 'view/site/home.php';
     }

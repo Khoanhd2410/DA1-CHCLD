@@ -1,0 +1,130 @@
+*{
+    margin: auto ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+.header-container{
+    width: 100%;
+}
+.header{
+    width: 1180px;
+    height: 160px;
+    background-image: url(../img/header-bg1.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.menu {
+    width: 300px;
+    float: left;
+}
+ul {
+    list-style: none;
+    float: left;
+    width: 300px;
+}
+ul li{
+    float: left;
+    padding-left: 9.5px;
+}
+ul li a{
+    font-size: 12.5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: red;
+}
+.border-menu{
+    width: 95px;
+    border-right: 1px solid beige;
+}
+.regist{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 1;
+    width: 100px;
+    height: 50px;
+    background-color: thistle;
+}
+
+/* banner-row */
+.banner{
+    width: 1180px;
+    height: 500px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.banner img{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-row{
+    width: 100%;
+    height: 180px;
+
+    float: left;
+}
+
+.banner-col-6{
+    width: 50%;
+    height: 100%;
+
+    float: left;
+}
+
+.btn-khai{
+    width: 555px;
+    height: 80px;
+    background-image: url(../img/khai_0.png);
+    display: inline-block;
+    margin-left: 20px;
+}
+.btn-sua{
+    width: 555px;
+    height: 80px;
+    background-image: url(../img/sua_0.png);
+    display: inline-block;
+    margin-left: 20px;
+}
+.btn-huong-dan{
+    width: 555px;
+    height: 80px;
+    background-image: url(../img/hd_1.png);
+    display: inline-block;
+    margin-left: 20px;
+}
+.btn-tra-cuu{
+    width: 555px;
+    height: 80px;
+    background-image: url(../img/tracuu_0.png);
+    display: inline-block;
+    margin-left: 20px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    
+}
+footer p{
+    width: 1180px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: white;
+}
+footer a{
+    color: #163824;
+    text-decoration: none;
+}
