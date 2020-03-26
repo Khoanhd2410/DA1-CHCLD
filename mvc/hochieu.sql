@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 24, 2020 lúc 09:50 AM
--- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.4.1
+-- Thời gian đã tạo: Th3 26, 2020 lúc 05:50 PM
+-- Phiên bản máy phục vụ: 10.4.8-MariaDB
+-- Phiên bản PHP: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -53,7 +53,8 @@ CREATE TABLE `congdan` (
   `noicap` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `dantoc` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tongiao` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `nghenghiep` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `nghenghiep` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dienthoai` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
