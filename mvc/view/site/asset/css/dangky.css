@@ -1,0 +1,37 @@
+.body{
+    width: 1100px;
+    margin: 0 auto;
+    
+    background-color: #FFA500;
+    padding: 20px;
+    text-align: left;
+    float: left;
+    margin-left: 70px;
+    
+}
+.trai{
+    float: left;
+    width: 48%;
+    margin-top: 3px;
+    border-right: 2px solid black;
+}
+.phai{
+    float: left;
+    width: 48%;
+    margin-top: 3px;
+    margin-left: 35px;
+}
+div label{
+    font-size: 20px;
+    margin-top: 10px;
+    color: blue;
+
+}
+.chia2{
+    float: left;
+    width: 48%;
+}
+.chia3{
+    float: left;
+    width: 32%;
+}
