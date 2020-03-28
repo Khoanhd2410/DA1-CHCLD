@@ -1,6 +1,6 @@
 <?
-    include_once "admin/model/config.php";
-    include_once "admin/model/user.php";
+    include_once "model/config.php";
+    include_once "model/user.php";
     //load index/home.php
     $action = "index";
     if(isset($_GET['act']))
@@ -8,7 +8,7 @@
     switch($action)
     {
         case "index":
-            include 'admin/view/home.php';
+            include 'view/home.php';
             break;
     }
 
