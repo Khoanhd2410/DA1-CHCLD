@@ -1,0 +1,125 @@
+*{
+    margin: auto ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* thủ thục hộ chiếu */
+.main-ht {
+    width:100%;
+    position: relative;
+    min-height: 150px;
+}
+.main {
+    width:1170px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-top: 15px;
+    color: black;
+}
+.ht {
+    width:100%;
+}
+.main .row {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.accordion {
+    margin: 0px;
+    font-size: 14px;
+}
+dl.accordion dt.active {
+    background: url(../images/hopen.png) 0 50% no-repeat;
+}
+
+dl.accordion dt {
+    margin: 5px 0;
+    background: url(../images/harrow.png) 0 50% no-repeat;
+    text-indent: 25px;
+}
+dt {
+    font-weight: 700;
+}
+dd, dt {
+    line-height: 1.42857143;
+}
+dt {
+    display: block;
+}
+
+
+dd {
+    margin-left: 0;
+}
+dd, dt {
+    line-height: 1.42857143;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+dl.accordion p {
+    margin-left: 25px;
+}
+p {
+    margin: 0 0 10px;
+}
+h3 {
+    font-size: 24px;
+    font-family: inherit;
+    color: #1f7643;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: none;
+    margin: 30px 0 20px 0;
+    line-height: 1.1;
+}
+.for-btn {
+    margin: 20px 0 20px 0 !important;
+    color: #faebeb !important;
+    padding: 10px 20px !important;
+    background: #1f7643 !important;
+    border: 0px solid #fff !important;
+    border-radius: 5px;
+    font-size: 14px !important;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold !important;
+}
+.text-center {
+    text-align: center;
+}
+div {
+    display: block;
+}
+footer{
+    width: 100%;
+    height: 100px;   
+}
+footer p{
+    width: 1180px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: white;
+}
+footer a{
+    color: #163824;
+    text-decoration: none;
+}

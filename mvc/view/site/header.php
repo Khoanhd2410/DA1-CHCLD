@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/mystyle.css">
     <script src="view/site/asset/css/dangky.js"></script>
     <link rel="stylesheet" href="view/site/asset/css/dangky.css">
+    <link rel="stylesheet" href="view/site/asset/css/thutuc.css">
 </head>
 <body>
     <!-- begin header -->
