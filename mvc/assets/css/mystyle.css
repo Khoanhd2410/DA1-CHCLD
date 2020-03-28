@@ -74,14 +74,12 @@ ul li a:hover{
 .banner-row{
     width: 100%;
     height: 180px;
-
     float: left;
 }
 
 .banner-col-6{
     width: 50%;
     height: 100%;
-
     float: left;
 }
 
@@ -113,18 +111,23 @@ ul li a:hover{
     display: inline-block;
     margin-left: 20px;
 }
+
+/* footer */
 footer{
     width: 100%;
-    height: 100px;
+    height: 150px;
     
 }
-footer p{
+.footer {
     width: 1180px;
-    margin: 0 auto;
     height: 80px;
     background-color: white;
 }
-footer a{
-    color: #163824;
-    text-decoration: none;
+.footer p{
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: 900;
+}
+.footer a{
+    color: #1f7643;
 }

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Đăng Ký</title>
-    <script src="asset/css/dangky.js"></script>
-    <link rel="stylesheet" href="asset/css/dangky.css">
+    <script src="assets/css/dangky.js"></script>
+    <link rel="stylesheet" href="assets/css/dangky.css"> 
     
 
 </head>
