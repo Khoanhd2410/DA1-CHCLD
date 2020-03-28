@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Đăng Ký</title>
-    <script src="asset/css/dangky.js"></script>
-    <link rel="stylesheet" href="asset/css/dangky.css">
-    
-
-</head>
-
-<body>
+<dangky>  
     <div class="body">
         <h2 style="text-align: center;">TỜ KHAI ĐIỆN TỬ</h2>
         <p style="text-align: center;">(Dùng cho công dân Việt Nam đề nghị cấp, sửa đổi hộ chiếu phổ thông ở trong nước)</p>
@@ -133,9 +120,8 @@
  
         
 
-           <br>
+           
         <input style="color: blue" class="form-button" type="button" value="Đăng Ký" onclick="hople_dulieu();">
         </form>
     </div>
-</body>
-</html>
+</dangky>

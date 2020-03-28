@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="asset/css/mystyle.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <script src="view/site/asset/css/dangky.js"></script>
+    <link rel="stylesheet" href="view/site/asset/css/dangky.css">
 </head>
 <body>
     <!-- begin header -->
@@ -16,7 +18,7 @@
                 <div class="menu">
                     <ul class="main-menu">
                         <li class="border-menu">
-                            <a href="">TRANG CHỦ</a>
+                            <a href="index.php?controller=home">TRANG CHỦ</a>
                         </li>
                         <li>
                             <a href="">LIÊN HỆ</a>
@@ -35,4 +37,3 @@
     </header>
     <!-- end header -->
 </body>
-</html>
