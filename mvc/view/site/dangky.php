@@ -122,7 +122,7 @@
  
         
 
-           <br>
+           
         <input style="color: blue" class="form-button" type="button" value="Đăng Ký" onclick="hople_dulieu();">
         </form>
     </div>

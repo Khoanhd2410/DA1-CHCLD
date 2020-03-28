@@ -16,7 +16,7 @@
                     <div class="menu">
                         <ul class="main-menu">
                             <li class="border-menu">
-                                <a href="">TRANG CHỦ</a>
+                                <a href="index.php?ctrl=home">TRANG CHỦ</a>
                             </li>
                             <li>
                                 <a href="">LIÊN HỆ</a>
@@ -27,7 +27,7 @@
 
                 <!-- registration -->
                 <div class="regist">
-                    <a href="view/site/dangky.php">Đăng ký</a>
+                    <a href="">Đăng ký</a>
                 </div>
 
                 </div>

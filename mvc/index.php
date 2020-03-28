@@ -1,4 +1,4 @@
-
+    <div class="container">
         <?php
             //load data header
             include 'view/site/header.php';
@@ -10,7 +10,7 @@
             //controller
             include 'controller/'.$ctrl.'.php';
 
-
             // load footer
             include 'view/site/footer.php';
         ?>  
+    </div>

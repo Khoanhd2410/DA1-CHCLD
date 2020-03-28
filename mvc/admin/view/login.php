@@ -1,4 +1,4 @@
-<form method="POST" action="index.php?ctrl=login">
+<form method="POST" action="index.php?controller=login">
         <table>
             <tr>
                 <td colspan="2"><span style="font-weight:bold;font-size:20px;">Admin Login</span></td>
