@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../assets/css/mystyle.css">
+        <link rel="stylesheet" href="../assets/css/dangky.css">
+        <link rel="stylesheet" href="../assets/css/login.css?v=<?php echo time(); ?>">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+        
     </head>
     <body>
         <!-- begin header -->
