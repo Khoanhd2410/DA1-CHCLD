@@ -30,13 +30,39 @@ function hople_dulieu(){
     //CMND
     if(f["cmnd"].value==""){
         with(document.getElementById("cmndError")){
-            innerHTML = "Hãy nhập CMND của bạn !!";
+            innerHTML = "Hãy nhập CMND ";
             style.color = "red";
             style.fontStyle = "italic";
         }
         Validation &= false
     }else{
         document.getElementById("cmndError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Ngày cấp CMND
+    if(f["ngaycapcmnd"].value==""){
+        with(document.getElementById("ngaycapcmndError")){
+            innerHTML = ", ngày cấp CMND ";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("ngaycapcmndError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Nơi cấp CMND
+    if(f["noicapcmnd"].value==""){
+        with(document.getElementById("noicapcmndError")){
+            innerHTML = "và nơi cấp CMND của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("noicapcmndError").innerHTML="";
         Validation &= true;
     }
 
