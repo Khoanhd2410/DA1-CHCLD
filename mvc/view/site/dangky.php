@@ -14,13 +14,40 @@
         <p style="text-align: center;">(Dùng cho công dân Việt Nam đề nghị cấp, sửa đổi hộ chiếu phổ thông ở trong nước)</p>
         <form action="#" name="DangKy">
             <div class="trai">
-                    <label  for="name">Họ và tên: </label> 
-                    <input style="width: 73%;" type="text" id="name" name="name" placeholder="Nhập họ và tên ....."><br>
-                    <span id="nameError"></span><br>
 
-                    <label for="cmnd">Thẻ CMND: </label> 
-                    <input style="width: 70%;" type="text" id="cmnd" name="cmnd" placeholder="Nhập CMND ....."><br>
-                    <span id="cmndError"></span> <br>
+                    <div style="width: 100%;">
+                        <label  for="name">Họ và tên: </label> 
+                        <input style="width: 75%;" type="text" id="name" name="name" placeholder="Nhập họ và tên ....."><br>
+                        <span id="nameError"></span><br>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <div class="chia3">
+                            <label for="cmnd">Thẻ CMND: </label> 
+                            <input style="width: 90%;" type="text" id="cmnd" name="cmnd" placeholder="Nhập CMND .....">
+                        </div>
+                    
+                        <div class="chia3">
+                            <label for="cmnd">Ngày cấp thẻ: </label> 
+                            <input style="width: 90%;" type="text" id="ngaycapcmnd" name="ngaycapcmnd" placeholder="Ngày cấp CMND ....."><br>
+                        </div>
+
+                        <div class="chia3">
+                            <label for="cmnd">Nơi cấp thẻ: </label> 
+                            <select style="width: 85%;" name="noicapcmnd" id="noicapcmnd">
+                                <option value="0"></option>
+                                <option value="1">Cục hồ sơ cảnh sát </option>
+                                <option value="2">Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư</option>
+                                <option value="3">An Giang</option>
+                                <option value="4">Bà Rịa Vũng Tàu</option>
+                                <option value="5">Bắc Giang</option>
+                            </select>
+                        </div>
+
+                        <span id="cmndError"></span> <span id="ngaycapcmndError"></span> <span id="noicapcmndError"></span>  <br>
+                    </div>
+                    
+                    
 
                     <label  for="noisinh">Nơi sinh: </label> 
                     <input style="width: 73%;" type="text" id="noisinh" name="noisinh" placeholder="Nhập nơi sinh ....."><br>
@@ -44,6 +71,7 @@
 
                     <label for="thang">Tháng: </label>
                     <select name="thang" id="thang">
+                        <option value="0"></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -60,6 +88,7 @@
 
                     <label for="year">Năm: </label>
                     <select name="year" id="year">
+                        <option value="0"></option>
                         <option value="1">1990</option>
                         <option value="2">1991</option>
                         <option value="3">1992</option>
@@ -81,11 +110,12 @@
                     <div class="chia3">
                             <label for="khoihanh">Nơi cấp </label> 
                             <select style="width: 85%;" name="khoihanh" id="khoihanh">
-                                <option value="1">Kinh (Việt)</option>
-                                <option value="2">Tày</option>
-                                <option value="3">Thái</option>
-                                <option value="4">Hoa(Hán)</option>
-                                <option value="5">Khơ-Me</option>
+                                <option value="0"></option>
+                                <option value="1">Cục hồ sơ cảnh sát </option>
+                                <option value="2">Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư</option>
+                                <option value="3">An Giang</option>
+                                <option value="4">Bà Rịa Vũng Tàu</option>
+                                <option value="5">Bắc Giang</option>
                             </select>
                             <br>
                             
@@ -108,12 +138,13 @@
                     <div class="chia3">
                             <label for="noiden">Tôn giáo </label> 
                             <select style="width: 85%;" name="noiden" id="noiden">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
+                                <option value="0"></option>
+                                <option value="0">Không tôn giáo</option>
+                                <option value="1">Đạo Phật</option>
+                                <option value="2">Đạo Thiên Chúa</option>
+                                <option value="3">Đạo Tin Lành</option>
+                                <option value="4">Đạo Cao Đài</option>
+                                <option value="5">Đạo Hồi</option>
                             </select>
                             <br>
                             
