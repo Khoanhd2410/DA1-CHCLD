@@ -9,17 +9,17 @@
             
             //load home
             $ctrl="home";
+
             if(!isset($_SESSION['admin']))//nếu mà không có sesssion thì controller nó sẽ là login
             {
-                $ctrl= "login"; 
+                $ctrl= "login";
             }
-            elseif(isset($_GET['controller']))
-            {
-            $ctrl=$_GET['controller'];
+            elseif(isset($_GET['controller'])){
+                $ctrl = $_GET['controller'];
+            
+            //load footer
             }
             include 'controller/'.$ctrl.'.php';
-            //load footer
-
             include 'view/footer.php';
         ?>
     </div>

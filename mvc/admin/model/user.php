@@ -3,7 +3,7 @@ function CheckLogin($email,$pass)
 {  
     $DBH=connect();
     $query="
-    SELECT * FROM admin
+    SELECT * FROM admins
     where email='$email'
     AND password='$pass'
     ";

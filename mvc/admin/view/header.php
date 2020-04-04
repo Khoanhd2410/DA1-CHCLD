@@ -32,6 +32,14 @@
                 <!-- registration -->
                 <div class="regist">
                     <a href="">Đăng ký</a>
+                    <?php
+          if(isset($_SESSION['admin']))
+          {
+            echo '
+            <a href="index.php?controller=login&act=logout">Logout:'.$_SESSION["admin"].'</a> ' ;
+          }
+        ?>
+                  
                 </div>
 
                 </div>
