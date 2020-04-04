@@ -26,11 +26,11 @@
         </div>
 
         <div class="txtb">
-            <input type="text" name="password">
+            <input type="password" name="password">
             <span data-placeholder="Password" ></span>
         </div>
 
-        <input type="submit" class="logbtn" value="Login">
+        <input type="submit"  name="btn_submit"class="logbtn" value="Login">
 
         <div class="bottom-text">
             Don't have account? <a href="">Sign up</a>

@@ -1,5 +1,13 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/dangky.css">
+    <script src="assets/css/dangky.js"></script>
+</head>
 <body>
     <div class="body">
         <h2 style="text-align: center;">TỜ KHAI ĐIỆN TỬ</h2>
@@ -127,3 +135,4 @@
         </form>
     </div>
 </body>
+</html>
