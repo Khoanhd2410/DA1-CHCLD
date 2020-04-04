@@ -8,7 +8,6 @@
     switch($action)
     {
         case "index":
-            
         include 'view/site/home.php';
     }
     //home.php

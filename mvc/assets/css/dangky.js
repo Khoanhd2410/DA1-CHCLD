@@ -43,7 +43,7 @@ function hople_dulieu(){
     //Ngày cấp CMND
     if(f["ngaycapcmnd"].value==""){
         with(document.getElementById("ngaycapcmndError")){
-            innerHTML = ", ngày cấp CMND ";
+            innerHTML = ", ngày cấp ";
             style.color = "red";
             style.fontStyle = "italic";
         }
@@ -111,36 +111,49 @@ function hople_dulieu(){
             document.getElementById("NgaysinhError").innerHTML="";
             Validation &= true;
         }
-    //Khởi hành   
-    if(f["khoihanh"].value==""){
-        with(document.getElementById("khoihanhError")){
-            innerHTML = "Chọn nơi khởi hành của bạn !!!";
-            style.color = "red";
-            style.fontStyle = "italic";
+    //Nơi cấp   
+        if(f["noicap"].value==""){
+            with(document.getElementById("noicapError")){
+                innerHTML = ", Chọn Nơi cấp ";
+                style.color = "red";
+                style.fontStyle = "italic";
+            }
+            Validation &= false
+        }else{
+            document.getElementById("noicapError").innerHTML="";
+            Validation &= true;
         }
-        Validation &= false;
-    }else{
-        document.getElementById("khoihanhError").innerHTML="";
-        Validation &= true;
-    }
 
-    //Nơi đến   
-    if(f["noiden"].value==""){
-        with(document.getElementById("noidenError")){
-            innerHTML = "Chọn nơi đến của bạn !!!";
-            style.color = "red";
-            style.fontStyle = "italic";
+    //Dân tộc   
+        if(f["dantoc"].value==""){
+            with(document.getElementById("dantocError")){
+                innerHTML = ", Chọn dân tộc ";
+                style.color = "red";
+                style.fontStyle = "italic";
+            }
+            Validation &= false
+        }else{
+            document.getElementById("dantocError").innerHTML="";
+            Validation &= true;
         }
-        Validation &= false;
-    }else{
-        document.getElementById("noidenError").innerHTML="";
-        Validation &= true;
-    }
+
+    //Tôn giáo
+        if(f["tongiao"].value==""){
+            with(document.getElementById("tongiaoError")){
+                innerHTML = " và tôn giáo ";
+                style.color = "red";
+                style.fontStyle = "italic";
+            }
+            Validation &= false
+        }else{
+            document.getElementById("tongiaoError").innerHTML="";
+            Validation &= true;
+        }
 
     //Giới tính
     if(f["gender"].value==""){
         with(document.getElementById("GioitinhError")){
-            innerHTML = "Chọn Giới Tính của bạn !!!";
+            innerHTML = " Chọn Giới Tính của bạn !!!";
             style.color = "red";
             style.fontStyle = "italic";
         }
@@ -180,4 +193,4 @@ function hople_dulieu(){
 
     
     
-    }       
+}       

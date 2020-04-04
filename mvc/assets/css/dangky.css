@@ -1,20 +1,15 @@
 .body{
-    width: 1150px;
+    width: 1170px;
     margin: 0 auto;
     background-color: #FFA500;
-    padding: 20px;
     text-align: left;
-    float: left;
-    margin-left: 70px;
 }
 .trai{
-    float: left;
     width: 48%;
     margin-top: 3px;
     border-right: 2px solid black;
 }
-.phai{
-    float: left;
+.phai{  
     width: 48%;
     margin-top: 3px;
     margin-left: 35px;
@@ -23,13 +18,21 @@ div label{
     font-size: 20px;
     margin-top: 10px;
     color: blue;
-
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .chia2{
     float: left;
     width: 48%;
+    margin-left: 5px;
 }
 .chia3{
     float: left;
     width: 32%;
+    margin-left: 5px;
+}
+.form-button{
+    color: blue; 
+    margin-left: 500px;
+    width: 150px;
 }
