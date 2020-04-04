@@ -9,73 +9,150 @@
     <script src="assets/css/dangky.js"></script>
 </head>
 <body>
+
     <div class="body">
+    <form class="form"  action="#" name="DangKy">
         <h2 style="text-align: center;">TỜ KHAI ĐIỆN TỬ</h2>
         <p style="text-align: center;">(Dùng cho công dân Việt Nam đề nghị cấp, sửa đổi hộ chiếu phổ thông ở trong nước)</p>
-        <form action="#" name="DangKy">
-            <div style="width: 100%;">
+        
+            
 
-                    <div style="width: 100%;">
+                    <div class="chung">
 
                         <div class="chia2">
                             <label  for="name">Họ và tên: </label> 
-                            <input style="width: 80%;" type="text" id="name" name="name" placeholder="Nhập họ và tên ....."><br>
-                            <span id="nameError"></span><br>
+                            <input style="width: 80%;" type="text"  name="name" placeholder="Nhập họ và tên .....">
+                            
                         </div>
                         
                         <div class="chia2">
                             <label>Số Điện Thoại: </label> 
-                            <input style="width: 70%;" type="text" id="phone" name="phone" placeholder="Hãy nhập số điện thoại.....">
-                            <br>
-                            <span id="dtError"></span> <br>
+                            <input style="width: 72%;" type="text" name="phone"   placeholder="Hãy nhập số điện thoại.....">
+                            
                         </div>
 
+                        <div class="chia2">
+                            <span id="nameError"></span>
+                        </div>
+                        
+                        <div class="chia2">
+                            <span id="dtError"></span> 
+                        </div>
                     </div>
 
-                    <div style="width: 100%;">
+                    <div class="chung">
 
                         <div class="chia3">
-                            <label for="cmnd">Thẻ CMND: </label><br>
-                            <input style="width: 90%;" type="text" id="cmnd" name="cmnd" placeholder="Nhập CMND ....."><br>
+                            <label for="cmnd">Thẻ CMND: </label>
+                            <input style="width: 95%;" type="text" id="cmnd" name="cmnd" placeholder="Nhập CMND .....">
+                            
                         </div>
                     
                         <div class="chia3">
-                            <label for="ngaycapcmnd">Ngày cấp thẻ: </label> <br> 
-                            <input style="width: 90%;" type="text" id="ngaycapcmnd" name="ngaycapcmnd" placeholder="Ngày cấp CMND ....."><br>
+                            <label for="ngaycapcmnd">Ngày cấp thẻ: </label> 
+                            <input style="width: 95%;" type="text" id="ngaycapcmnd" name="ngaycapcmnd" placeholder="Ngày cấp CMND .....">
+                            
                         </div>
 
                         <div class="chia3">
-                            <label for="noicapcmnd">Nơi cấp thẻ: </label><br>
-                            <select style="width: 90%;" name="noicapcmnd" id="noicapcmnd">
-                                <option value="0"></option>
+                            <label for="noicapthe">Nơi cấp thẻ: </label>
+                            <select style="width: 95%;" id="noicapthe" name="noicapthe">
+                                <option value=""></option>
                                 <option value="1">Cục hồ sơ cảnh sát </option>
                                 <option value="2">Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư</option>
                                 <option value="3">An Giang</option>
                                 <option value="4">Bà Rịa Vũng Tàu</option>
                                 <option value="5">Bắc Giang</option>
+                                
                             </select>
                         </div>
 
-                        <span id="cmndError"></span> 
-                        <span id="ngaycapcmndError"></span> 
-                        <span id="noicapcmndError"></span> <br>
+                        <div class="chia3">
+                            <span id="cmndError"></span> 
+                        </div>
+                    
+                        <div class="chia3">
+                            <span id="ngaycapcmndError"></span>
+                        </div>
+
+                        <div class="chia3">
+                            <span id="noicaptheError"></span>
+                        </div>
                     </div>
                     
-                    <div style="width: 100%;">
+                    <div class="chung">
                         <label  for="noisinh">Nơi sinh: </label> 
-                        <input style="width: 87%;" type="text" id="noisinh" name="noisinh" placeholder="Nhập nơi sinh ....."><br>
-                        <span id="noisinhError"></span><br>
+                        <input style="width: 87%;" type="text" id="noisinh" name="noisinh" placeholder="Nhập nơi sinh .....">
                     </div>
 
-                    <div style="width: 100%;">
+                    <div class="chung">
+                        <span id="noisinhError"></span>
+                    </div>
+
+                    <div class="chung">
+                  
+                        <div class="chia3">
+                                    <label for="noicap">Nơi cấp </label> 
+                                    <select style="width: 85%;" name="noicap" id="noicap">
+                                        <option value=""></option>
+                                        <option value="1">Cục hồ sơ cảnh sát </option>
+                                        <option value="2">Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư</option>
+                                        <option value="3">An Giang</option>
+                                        <option value="4">Bà Rịa Vũng Tàu</option>
+                                        <option value="5">Bắc Giang</option>
+                                    </select>
+                            </div>
+                            
+                            <div class="chia3">
+                                    <label for="dantoc">Dân tộc </label> 
+                                    <select style="width: 85%;" name="dantoc" id="dantoc">
+                                        <option value=""></option>
+                                        <option value="1">Kinh (Việt)</option>
+                                        <option value="2">Tày</option>
+                                        <option value="3">Thái</option>
+                                        <option value="4">Hoa(Hán)</option>
+                                        <option value="5">Khơ-Me</option>
+                                    </select>
+                            </div>
+
+                            <div class="chia3">
+                                    <label for="tongiao">Tôn giáo </label> 
+                                    <select style="width: 85%;" name="tongiao" id="tongiao">
+                                        <option value=""></option>
+                                        <option value="0">Không tôn giáo</option>
+                                        <option value="1">Đạo Phật</option>
+                                        <option value="2">Đạo Thiên Chúa</option>
+                                        <option value="3">Đạo Tin Lành</option>
+                                        <option value="4">Đạo Cao Đài</option>
+                                        <option value="5">Đạo Hồi</option>
+                                    </select>
+                            </div>
+
+                            <div class="chia3">
+                                <span id="noicapError"></span>
+                            </div>
+                            
+                            <div class="chia3">
+                                <span id="dantocError"></span>
+                            </div>
+
+                            <div class="chia3">
+                                <span id="tongiaoError"></span>  
+                            </div>
+                        
+                  </div>  
+
+                    <div class="chung">
                         <label for="gender">Giới tính: </label> 
                         <input type="radio" id="nam" name="gender" value="nam"><label for="nam">Nam</label>
                         <input type="radio" id="nu" name="gender" value="nu"><label for="nu">Nữ</label>
-                        <br>
-                        <span id="GioitinhError"></span> <br>
                     </div>
 
-                   <div style="width: 100%;">
+                    <div>
+                        <span id="GioitinhError"></span> 
+                    </div>
+
+                   <div class="chung">
                    
                         <div class="chia3">
                             <label for="Ngaysinh">Ngày sinh: </label> 
@@ -118,66 +195,19 @@
                                 <option value="4">1995</option>
                             </select>
                         </div>
-                    <span id="NgaysinhError"></span> <br>
+                    <span id="NgaysinhError"></span> 
                    </div>
 
                 
-                <div style="width: 100%;">
+                
                     
-                </div>
-                    
-            </div>
+            
     <!--Phải-->
-            <div style="width: 100%;">
-                  <div>
-                    <div class="chia3">
-                                <label for="noicap">Nơi cấp </label> 
-                                <select style="width: 85%;" name="noicap" id="noicap">
-                                    <option value="0"></option>
-                                    <option value="1">Cục hồ sơ cảnh sát </option>
-                                    <option value="2">Cục Cảnh sát ĐKQL cư trú và DLQG về dân cư</option>
-                                    <option value="3">An Giang</option>
-                                    <option value="4">Bà Rịa Vũng Tàu</option>
-                                    <option value="5">Bắc Giang</option>
-                                </select>
-                                <br>
-                                <span id="noicapError"></span>
-                        </div>
-                        
-                        <div class="chia3">
-                                <label for="dantoc">Dân tộc </label> 
-                                <select style="width: 85%;" name="dantoc" id="dantoc">
-                                    <option value="0"></option>
-                                    <option value="1">Kinh (Việt)</option>
-                                    <option value="2">Tày</option>
-                                    <option value="3">Thái</option>
-                                    <option value="4">Hoa(Hán)</option>
-                                    <option value="5">Khơ-Me</option>
-                                </select>
-                                <br>
-                                <span id="dantocError"></span>
-                        </div>
-
-                        <div class="chia3">
-                                <label for="tongiao">Tôn giáo </label> 
-                                <select style="width: 85%;" name="tongiao" id="tongiao">
-                                    <option value="0"></option>
-                                    <option value="0">Không tôn giáo</option>
-                                    <option value="1">Đạo Phật</option>
-                                    <option value="2">Đạo Thiên Chúa</option>
-                                    <option value="3">Đạo Tin Lành</option>
-                                    <option value="4">Đạo Cao Đài</option>
-                                    <option value="5">Đạo Hồi</option>
-                                </select>
-                                
-                                <span id="tongiaoError"></span>  
-                        </div>
-                        <br>
-                  </div>  
+            
                     
 
-                    <div style="width: 100%;">
-                            <label>Ghi chú (Dành cho quý khách hàng có yêu cầu đặt biệt</label> <br>
+                    <div class="chung">
+                            <label>Ghi chú (Dành cho quý khách hàng có yêu cầu đặt biệt</label> 
                             <textarea cols="50" rows="5"></textarea>
 
                     </div>
@@ -185,11 +215,13 @@
                 
             </div>
         
- 
+            <div class="chung">
+                <input class="form-button" type="button" value="Đăng Ký" onclick="hople_dulieu();">
+            </div>
         
 
            
-        <input class="form-button" type="button" value="Đăng Ký" onclick="hople_dulieu();">
+        
         </form>
     </div>
 </body>

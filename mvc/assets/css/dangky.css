@@ -1,8 +1,15 @@
 .body{
     width: 1170px;
     margin: 0 auto;
-    background-color: #FFA500;
+    background-color: lightgray;
     text-align: left;
+    height: 500px;
+}
+.chung{
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 5px;
+    float:left;
 }
 .trai{
     width: 48%;
@@ -23,7 +30,7 @@ div label{
 }
 .chia2{
     float: left;
-    width: 48%;
+    width: 45%;
     margin-left: 5px;
 }
 .chia3{
@@ -35,4 +42,9 @@ div label{
     color: blue; 
     margin-left: 500px;
     width: 150px;
+}
+.form{
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
 }
