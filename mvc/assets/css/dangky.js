@@ -62,6 +62,7 @@ function hople_dulieu(){
         }
         Validation &= false
     }else{
+        document.getElementById("noicaptheError").innerHTML="";
         Validation &= true;
     }
 
@@ -114,7 +115,7 @@ function hople_dulieu(){
     //Ngày Sinh
         if(f["ngay"].value==""){
             with(document.getElementById("NgaysinhError")){
-                innerHTML = "Chọn Ngày Tháng Năm Sinh của bạn !!!";
+                innerHTML = "Chọn Ngày Sinh của bạn !!!";
                 style.color = "red";
                 style.fontStyle = "italic";
             }
@@ -123,6 +124,33 @@ function hople_dulieu(){
             document.getElementById("NgaysinhError").innerHTML="";
             Validation &= true;
         }
+
+        //Tháng Sinh
+        if(f["thang"].value==""){
+            with(document.getElementById("ThangsinhError")){
+                innerHTML = "Chọn Tháng Sinh của bạn !!!";
+                style.color = "red";
+                style.fontStyle = "italic";
+            }
+            Validation &= false;
+        }else{
+            document.getElementById("ThangsinhError").innerHTML="";
+            Validation &= true;
+        }
+
+        //Ngày Sinh
+        if(f["nam"].value==""){
+            with(document.getElementById("NamsinhError")){
+                innerHTML = "Chọn Năm Sinh của bạn !!!";
+                style.color = "red";
+                style.fontStyle = "italic";
+            }
+            Validation &= false;
+        }else{
+            document.getElementById("NamsinhError").innerHTML="";
+            Validation &= true;
+        }
+
     //Nơi cấp   
         if(f["noicap"].value==""){
             with(document.getElementById("noicapError")){
@@ -175,9 +203,110 @@ function hople_dulieu(){
         Validation &= true;
     }
 
-     
+    //Địa chỉ thường trú
+    if(f["dcthuongtru"].value==""){
+        with(document.getElementById("dcthuongtruError")){
+            innerHTML = "Hãy nhập địa chỉ thường trú !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("dcthuongtruError").innerHTML="";
+        Validation &= true;
+    }
 
-    //Sở thích
+    //Địa chỉ tạm trú
+    if(f["dctamtru"].value==""){
+        with(document.getElementById("dctamtruError")){
+            innerHTML = "Hãy nhập địa chỉ tạm trú !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("dctamtruError").innerHTML="";
+        Validation &= true;
+    }
+    
+    //Nghề nghiệp
+    if(f["nghenghiep"].value==""){
+        with(document.getElementById("nghenghiepError")){
+            innerHTML = "Hãy nhập Nghề nghiêp hiện tại của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("nghenghiepError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Địa chỉ cơ quan
+    if(f["dccoquan"].value==""){
+        with(document.getElementById("dccoquanError")){
+            innerHTML = "Hãy nhập địa chỉ cơ quan hiện của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("dccoquanError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Họ tên cha
+    if(f["hotencha"].value==""){
+        with(document.getElementById("hotenchaError")){
+            innerHTML = "Hãy nhập Họ tên cha của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("hotenchaError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Ngày sinh của cha
+    if(f["ngaysinhcha"].value==""){
+        with(document.getElementById("ngaysinhchaError")){
+            innerHTML = "Hãy nhập Ngày sinh cha của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("ngaysinhchaError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Họ tên mẹ
+    if(f["hotenme"].value==""){
+        with(document.getElementById("hotenmeError")){
+            innerHTML = "Hãy nhập Họ tên mẹ của bạn !!";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("hotenmeError").innerHTML="";
+        Validation &= true;
+    }
+
+    //Ngày sinh của mẹ
+    if(f["ngaysinhme"].value==""){
+        with(document.getElementById("ngaysinhmeError")){
+            innerHTML = "Hãy nhập Ngày sinh mẹ của bạn";
+            style.color = "red";
+            style.fontStyle = "italic";
+        }
+        Validation &= false
+    }else{
+        document.getElementById("ngaysinhmeError").innerHTML="";
+        Validation &= true;
+    }
+
     
 
     if(Validation){

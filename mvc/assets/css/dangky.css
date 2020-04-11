@@ -3,23 +3,23 @@
     margin: 0 auto;
     background-color: lightgray;
     text-align: left;
-    height: 500px;
+    height: 700px;
 }
 .chung{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     margin-left: 5px;
     float:left;
 }
-.trai{
-    width: 48%;
-    margin-top: 3px;
-    border-right: 2px solid black;
+.chia3{
+    width: 25%;
+    margin-left: 5px;
+    float: left;
 }
-.phai{  
-    width: 48%;
-    margin-top: 3px;
-    margin-left: 35px;
+.chia7{  
+    width: 65%;
+    margin-left: 5px;
+    float: left;
 }
 div label{
     font-size: 20px;
