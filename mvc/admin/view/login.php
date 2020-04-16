@@ -17,7 +17,7 @@
         </table>
 </form> -->
 <div class="body-login">
-    <form method="POST" class="login-form" action="index.php?controller=login" >
+    <form method="POST" class="login-form" action="index.php?controller=login&act=login" >
         <h1>Login</h1>
 
         <div class="txtb">
@@ -30,12 +30,19 @@
             <span data-placeholder="Password" ></span>
         </div>
 
-        <input type="submit"  name="btn_submit"class="logbtn" value="Login">
-
+        <input type="submit"  name="btn_submit" class="logbtn" value="Login">
+        
         <div class="bottom-text">
             Don't have account? <a href="">Sign up</a>
         </div>
     </form>
+    <?php
+        if(isset($msg_error) && ($msg_error != ""))
+        {
+            echo '<h2 style="color:red">'.$msg_error.'</h2>';
+        }
+
+    ?>
 </div>
 
 <script type="text/javascript">

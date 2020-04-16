@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../assets/css/dangky.css">
         <link rel="stylesheet" href="../assets/css/login.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
-        
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     </head>
     <body>
         <!-- begin header -->
@@ -20,10 +20,11 @@
                     <div class="menu">
                         <ul class="main-menu">
                             <li class="border-menu">
-                                <a href="index.php?ctrl=home">TRANG CHỦ</a>
+                                <a href="index.php?controller=home">TRANG CHỦ</a>
                             </li>
                             <li>
                                 <a href="">LIÊN HỆ</a>
+                                
                             </li>
                         </ul>
                     </div>
@@ -33,10 +34,10 @@
                 <div class="regist">
                     <a href="">Đăng ký</a>
                     <?php
-          if(isset($_SESSION['admin']))
+          if(isset($_SESSION['id_admin']))
           {
             echo '
-            <a href="index.php?controller=login&act=logout">Logout:'.$_SESSION["admin"].'</a> ' ;
+            </br><a href="index.php?controller=login&act=logout"><i class="fas fa-sign-out-alt fa-2x"></i></a> ' ;
           }
         ?>
                   

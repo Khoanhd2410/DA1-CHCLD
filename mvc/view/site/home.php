@@ -2,7 +2,7 @@
     <!-- banner -->
     <div class="banner">
         <div class="banner-main">
-            <img src="assets/img/banner.png" alt="">
+            <img src="assets/img/banner.png" alt="" style="width:97%;">
         </div>
         <div class="banner-row">
             <div class="banner-col-6">

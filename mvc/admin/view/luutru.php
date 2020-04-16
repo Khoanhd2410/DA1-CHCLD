@@ -13,8 +13,8 @@
         <div class="main">
             <aside class="col-2">
                 <div class="profile-img">
-                    <a href=""><img src="../assets/img/4.webp" alt="" style="margin-left:30px;border-radius:50%;"></a>
-                    <h2 style="text-align: center;color:white"><?php $_SESSION['name'] ?></h2>
+                    <a href=""><img src="../assets/img/4.webp" alt="" style="margin-top:10px;width:60%;margin-left:30px;border-radius:50%;"></a>
+                    <h2 style="text-align: center;color:white;padding-top:10px"><?php echo $_SESSION['name'] ?></h2>
                 </div>
                 <div class="profile-social">
                     <ul class="social">

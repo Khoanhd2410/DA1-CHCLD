@@ -1,9 +1,10 @@
 .body{
-    width: 1170px;
+    width: 1300px;
     margin: 0 auto;
     background-color: lightgray;
     text-align: left;
     height: 700px;
+    margin-bottom: 20px;
 }
 .chung{
     margin-top: 15px;
@@ -46,5 +47,5 @@ div label{
 .form{
     width: 100%;
     margin: 0 auto;
-    height: 500px;
+    height: 700px;
 }

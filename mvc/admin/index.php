@@ -10,7 +10,7 @@
             //load home
             $ctrl="home";
 
-            if(!isset($_SESSION['admin']))//nếu mà không có sesssion thì controller nó sẽ là login
+            if(!isset($_SESSION['id_admin']))//nếu mà không có sesssion thì controller nó sẽ là login
             {
                 $ctrl= "login";
             }

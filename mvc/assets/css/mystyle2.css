@@ -1,0 +1,329 @@
+
+.container{
+    width: 100%;
+
+}
+.main{
+    width: 1300px;
+    height: 700px;
+    background-color: #152036;
+    margin-bottom: 20px;
+}
+
+/* ĐÂY LÀ CATALOG */
+
+.col-2{
+    width: 200px;
+    height: 100%;
+    background-color: #1b2a47;
+    float: left;
+}
+.profile-img{
+    width: 150px;
+    height: 120px;
+
+}
+.profile-social{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+ul.social{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+ul.social li a{
+    color: white;
+}
+
+span{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.menu-catalog{
+    width: 100%;
+    height: 600px;
+}
+.has-menu{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: white;
+}
+.has-menu:hover{
+    background-color: #152036;
+    transition: 1s;
+}
+/* .catalog{
+
+    margin-top: 20px;
+}
+.menu-catalog{
+    cursor: pointer;
+    width: 100%;
+}
+span{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.has-menu{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+.width{
+    width: 150px;
+    height: 50px;
+} */
+.col-10{
+    width: 1050px;
+    height: 650px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+/* Đây là PROGRESS */
+
+.col-8-progress{
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+.col-3-1{
+    width: 23%;
+    height: 110px;
+    background-color: #1b2a47;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.col-3-2{
+    width: 23%;
+    height: 110px;
+    background-color: #1b2a47;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.col-3-3{
+    width: 23%;
+    height: 110px;
+    background-color: #1b2a47;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.col-3-4{
+    width: 23%;
+    height: 110px;
+    background-color: #1b2a47;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.col-3-main{
+    width: 80%;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.text-left{
+    text-align: left;
+    width: 100%;
+}
+
+.background-left{
+    width: 50%;
+    height: 40px;
+    padding-top: 20px;
+    float: left;
+
+}
+.bg-green{
+    background-color: #24caa1;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    width: 30%;
+    height: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-right{
+    width: 30%;
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.progress{
+    height: 6px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+
+    float: left;
+}
+
+.progress-bg-green{
+    height: 6px;
+    width: 80%;
+    background: #24caa1;
+    border-radius: 2px;
+    float: left;
+}
+
+.bg-green-2{
+    background-color: #eb4b4b;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    width: 30%;
+    height: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.progress-bg-green-2{
+    height: 6px;
+    width: 15%;
+    background: #eb4b4b;
+    border-radius: 2px;
+    float: left;
+}
+
+.bg-green-3{
+    background-color: #2eb7f3;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    width: 30%;
+    height: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.progress-bg-green-3{
+    height: 6px;
+    width: 40%;
+    background: #2eb7f3;
+    border-radius: 2px;
+    float: left;
+}
+
+.bg-green-4{
+    background-color: #805bbe;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    width: 30%;
+    height: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.progress-bg-green-4{
+    height: 6px;
+    width: 60%;
+    background: #805bbe;
+    border-radius: 2px;
+    float: left;
+}
+
+/* ĐÂY LÀ HỒ SÔ QUẢN LÝ CỦA TỪNG QUẢN LÝ */
+
+.col-8-manage{
+    width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.col-8-main{
+    width: 95%;
+    height: 460px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #1b2a47;
+    float: left;
+}
+
+.text-h1{
+    width: 100%;
+    height: 60px;
+
+    float: left;
+    border-top:1px solid rgba(0, 0, 0, 0.125);
+    border-bottom:1px solid rgba(0, 0, 0, 0.125);
+}
+
+.file-main{
+    width: ;
+}
+
+.tooltip {
+    position: relative; 
+    display: inline-block;
+    margin: auto;
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+.tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+ 
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-right {
+    bottom: 120%;
+    left: 10%;
+}
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}

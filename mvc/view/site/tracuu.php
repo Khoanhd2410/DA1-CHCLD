@@ -22,14 +22,14 @@
         <div class="form-group">
             <label for="so_bien_nhan"><strong>Số biên nhận</strong></label>
             <div class="col-9">
-                <input class="box-input" type="text" name="so_bien_nhan" placeholder="Nhập số biên nhận">
+                <input class="box-input" type="text" id="so_bien" name="so_bien_nhan" placeholder="Nhập số biên nhận">
             </div>
         </div>
          <!-- họ và tên -->
         <div class="form-group">
             <label for="so_bien_nhan"><strong>Họ và tên</strong></label>
             <div class="col-9">
-                <input class="box-input" type="text" name="ho_va_ten" placeholder="Nhập đầy đủ họ tên tiếng Việt có dấu">
+                <input class="box-input" type="text" id="name" name="ho_va_ten" placeholder="Nhập đầy đủ họ tên tiếng Việt có dấu">
             </div>
         </div>
         <div class="form-group">
@@ -42,9 +42,35 @@
                 </select>
             </div>
             <div class="col-6">
-                <input type="text"  class="empty">
+                <input type="text" id="date" class="empty">
             </div>
+            <input type="button" class="button" onclick="dieukien()" value="TRA CỨU" style="width:10%;height:10%;background-color:#1f7643;color:white;font-family:sans-serif;cursor:pointer;border:none;border-radius:5px;font-size:16.5px;font-weight:bold">
         </div>
         
         </div>
     </div>
+    <script type="text/javascript">
+     function dieukien(){
+        var maso = document.getElementById('so_bien').value;
+        var hoten = document.getElementById('name').value;
+        var ngaysinh = document.getElementById('date').value;
+            if (maso == '')
+            {
+                alert ("Bạn chưa nhập mã số");
+            }
+            else if (hoten == '')
+            {
+                alert ("Bạn chưa nhập họ tên");
+            }
+            else if (ngaysinh == '')
+            {
+                alert ("Bạn chưa nhập ngày sinh");
+            }
+            else
+            {
+                alert ("Đủ dữ kiện bạn chờ chút !");
+                return true;
+            }
+            return false;
+        }
+        </script>
