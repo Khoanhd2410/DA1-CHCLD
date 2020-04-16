@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 04, 2020 lúc 07:34 AM
+-- Thời gian đã tạo: Th4 16, 2020 lúc 10:59 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.3.14
+-- Phiên bản PHP: 7.2.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -33,15 +32,20 @@ CREATE TABLE `admins` (
   `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role` tinyint(1) NOT NULL,
+  `action` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `admins`
 --
 
-INSERT INTO `admins` (`id_admin`, `username`, `name`, `email`, `password`) VALUES
-(1, 'tuấn', 'tâm', 'tam', 'tamdeptrai123');
+INSERT INTO `admins` (`id_admin`, `username`, `name`, `email`, `password`, `role`, `action`) VALUES
+(1, 'Quang Tâm', 'Tâm', 'tam', '123', 1, 'XÉT THỰC'),
+(2, 'Đăng Khoa', 'Khoa', 'Khoa', '123', 2, 'XÉT DUYỆT'),
+(3, 'Trâm Quỳnh', 'Quỳnh', 'quynh', '123', 3, 'LƯU TRỮ'),
+(4, 'Đăng Trường', 'Trường', 'truong', '123', 4, 'GIÁM SÁT');
 
 -- --------------------------------------------------------
 
@@ -55,14 +59,24 @@ CREATE TABLE `congdan` (
   `ngaysinh` date NOT NULL,
   `noisinh` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `gioitinh` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `cmnd` int(11) NOT NULL,
+  `cmnd` int(11) DEFAULT NULL,
   `ngaycap` date NOT NULL,
   `noicap` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `dantoc` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tongiao` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nghenghiep` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `dienthoai` int(11) DEFAULT NULL
+  `dienthoai` int(11) DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `congdan`
+--
+
+INSERT INTO `congdan` (`id_congdan`, `hoten`, `ngaysinh`, `noisinh`, `gioitinh`, `cmnd`, `ngaycap`, `noicap`, `dantoc`, `nghenghiep`, `dienthoai`, `status`) VALUES
+(1, 'Trần Công A', '0000-00-00', '', '', NULL, '0000-00-00', '', '', '', 840761007, '1'),
+(3, 'Nguyễn Văn C', '2000-03-14', '', '', 204343433, '0000-00-00', '', '', '', 843077332, '2'),
+(4, 'Nguyễn Văn D', '2000-04-25', '', '', 240222333, '0000-00-00', '', '', '', 843943434, '2'),
+(5, 'tam', '0000-00-00', '', '', 123123123, '0000-00-00', '', '', '', 843021322, '2');
 
 -- --------------------------------------------------------
 
@@ -185,13 +199,13 @@ ALTER TABLE `nhatky`
 -- AUTO_INCREMENT cho bảng `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id_admin` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_admin` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `congdan`
 --
 ALTER TABLE `congdan`
-  MODIFY `id_congdan` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_congdan` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `hochieu`
