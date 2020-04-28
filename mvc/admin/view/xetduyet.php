@@ -25,7 +25,7 @@
                     </div>
                     <nav class="catalog">
                         <ul class="menu-catalog">
-                            <li class="has-menu"><a href=""><i class="fas fa-address-card fa-2x"><span> XÉT THỰC</span></i></a></li>
+                            <li class="has-menu"><a href=""><i class="fas fa-address-card fa-2x"><span> XÉT DUYỆT</span></i></a></li>
                         </ul>
                     </nav>
                 </aside>
@@ -91,7 +91,7 @@
                     <div class="col-8-manage">
                         <div class="col-8-main">
                             <div class="text-h1">
-                                <h2 style="padding-top:18px;padding-left:20px;font-size:22px;color:white;font-weight:700"><?php echo $_SESSION['action']; ?></h2>
+                                <h2 style="padding-top:18px;padding-left:20px;font-size:22px;color:white;font-weight:700">XÉT DUYỆT</h2>
                             </div>
                             <div class="file-main">
                                 <table class="table" style="width:100%;margin-bottom: 1rem;color: #212529;padding-top:10px;opacity:0.8;white-space:nowrap">
@@ -110,6 +110,13 @@
                                         <?php   
                                             foreach(  $xetduyet as $xd)
                                             {
+                                                if($xd['status'] == "Đã xét thực")
+                                                {
+                                                    $change = "Chờ xét duyệt";
+                                                }
+                                              
+
+                                                
                                             //     if($form['status']==2)
                                             //     {
                                             //         $status = '<div style="text-align:center;color:white;background-color:#2eb7f3;width:50px;height:45px;font-size:12px;border-radius:10px">Đã xét duyệt</div>';
@@ -141,13 +148,12 @@
                                                     <td style="text-align:center;color:white">
                                                         '.$xd['dienthoai'].'
                                                     </td>
-                                                    <td style="height:20px;color:white">
-                                                        
-                                                        
+                                                    <td style="height:20px;color:white;text-align:center">
+                                                        '.$change.'
                                                     </td>
-                                                    <td style="text-align:center;">
-                                                        <a href="index.php?controller=xethuc&act=xethuc&idcongdan='.$xd['id_congdan'].'" class="tooltip" style="padding-bottom:20px;color:white;border-color: #033C73"><i class="fas fa-address-card fa-2x" id="tooltip"><span class="tooltiptext tooltip-right">'.$_SESSION['action'].'</span></i></a>
-                                                        
+                                                    <td style="width:150px;height:50px;text-align:center">
+                                                        <a href="index.php?controller=xetduyet&idcongdan='.$xd['id_congdan'].'" class="tooltip" style="float:left;color:white;padding-top:10px;padding-left:10px"><i class="fas fa-check fa-x" id="tooltip"><span class="tooltiptext tooltip-right">Phê duyệt</span></i></a>
+                                                        <a href="index.php?controller=xetduyet&idcongdan='.$xd['id_congdan'].'" class="tooltip"   style="color:white;padding-top:10px;padding-right:15px"><i class="fas fa-times fa-x"><span class="tooltiptext tooltip-right">Không phê duyệt</span></i></a>
                                                     </td>
                                                 </tr>';
                                             }

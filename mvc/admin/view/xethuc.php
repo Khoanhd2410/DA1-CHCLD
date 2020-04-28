@@ -103,28 +103,51 @@
                                             <th>Cmnd</th>
                                             <th>Số điện thoại</th>
                                             <th>Status</th>
-                                            <th>Actions</th>
+                                            <th style="padding-left:-20px">Actions</th>
+                                            <a href=""></a>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <!-- <div style="text-align:center;color:white;background-color:#24caa1;width:50px;height:45px;font-size:12px;border-radius:10px">'.$form['status'].'</div> -->
                                         <?php   
-                                            foreach(  $information as $form)
+                                            foreach( $information as $form)
                                             {
-                                                if($form['status']==2)
-                                                {
-                                                    $status = '<div style="text-align:center;color:white;background-color:#2eb7f3;width:50px;height:45px;font-size:12px;border-radius:10px">Đã xét duyệt</div>';
+                                                if( $form['status'] == 'waiting'){
+                                                    $action = '<a class="tooltip" href="index.php?controller=xethuc&act=xethuc&idcongdan='.$form['id_congdan'].'" style="float:left;color:white;"><i class="fas fa-address-card fa-2x"><span class="tooltiptext tooltip-right">Xét thực</span></i></a>
+                                                               <a class="tooltip" href="index.php?controller=xethuc&act=thongtin&idcongdan='.$form['id_congdan'].'" id="button"  style="color:white;"><i class="fas fa-info-circle fa-2x"><span class="tooltiptext tooltip-right">Thông tin</span></i></a>
+                                                    ';
+                                                    // đây nè ông button id="button" id="button2"
+                                                    // ở đây tui cho 2 id để sử dụng đc cái waiting vs không hợp lệ 
+
                                                 }
-                                                elseif($form['status']==1)
+                                                else
                                                 {
-                                                    $status = '<div style="text-align:center;color:white;background-color:#C71C22;width:50px;height:45px;font-size:12px;border-radius:10px">Hủy bỏ</div>';
-                                                    
+                                                    $action = '<a class="tooltip" style="float:left;color:white;border-color: #033C73"><i class="fas fa-address-card fa-2x "><span class="tooltiptext tooltip-right">Xét thực</span></i></a>
+                                                               <a class="tooltip" href="index.php?controller=xethuc&act=thongtin&idcongdan='.$form['id_congdan'].'" id="button2"  style="color:white;"><i class="fas fa-info-circle fa-2x"><span class="tooltiptext tooltip-right">Thông tin</span></i></a>
+                                                    ';
+                                                }
+
+                                                if ( $form['status'] == 'Đã xét thực'){
+                                                    $bgcolor = '<div style="text-align:center;color:white;background-color:#2eb7f3;width:60px;height:45px;font-size:12px;border-radius:10px">'.$form['status'].'</div>';
+                                                }
+                                                elseif ( $form['status'] == 'Không hợp lệ'){
+                                                    $bgcolor =  '<div style="text-align:center;color:white;background-color:#eb4b4b;width:65px;height:45px;font-size:12px;border-radius:10px">'.$form['status'].'</div>';
                                                 }
                                                 else{
-
-                                                    $status = '<div style="text-align:center;color:white;background-color:#24caa1;width:50px;height:45px;font-size:12px;border-radius:10px">Waiting</div>';
+                                                    $bgcolor =  '<div style="text-align:center;color:white;background-color:#24caa1;width:65px;height:45px;font-size:12px;border-radius:10px">'.$form['status'].'</div>';
                                                 }
-                                             
+                                                // if($form['id_congdan'] == 1)
+                                                // {
+                                                //     $status = '<div style="text-align:center;color:white;background-color:#24caa1;width:50px;height:45px;font-size:12px;border-radius:10px">'.$xetthuc.'</div>' ;
+                                                // }
+                                               
+                                                // }
+                                                // else{
 
+                                                //     $status = '<div style="text-align:center;color:white;background-color:#24caa1;width:50px;height:45px;font-size:12px;border-radius:10px">Waiting</div>';
+                                                // }
+                                                // = 2 thi " đã xét thưc" || = 1 thi huy bo else thi no mac dinh neu hk co 1 va 2 thi no la 0 --> đang chờ 
+                                                
                                                 echo '<tr style="line-height:50px;padding-top:20px">
                                                     <td style="text-align:center;padding-left:20px;color:white">
                                                         '.$form['id_congdan'].'
@@ -142,11 +165,11 @@
                                                         '.$form['dienthoai'].'
                                                     </td>
                                                     <td style="height:20px;color:white">
-                                                        '.$status.'
+                                                        '.$bgcolor.'
                                                         
                                                     </td>
-                                                    <td style="text-align:center;">
-                                                        <a href="index.php?controller=xethuc&act=xethuc&idcongdan='.$form['id_congdan'].'" class="tooltip" style="padding-bottom:20px;color:white;border-color: #033C73"><i class="fas fa-address-card fa-2x" id="tooltip"><span class="tooltiptext tooltip-right">'.$_SESSION['action'].'</span></i></a>
+                                                    <td style="width:150px;height:50px;text-align:center">
+                                                        '.$action.'
                                                         
                                                     </td>
                                                 </tr>';
@@ -160,5 +183,61 @@
                 </div>
             </div>
         </div>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <h2 style="border-bottom: 1px solid rgba(131, 129, 129, 0.7);">Thông Tin Đăng Ký</h2>
+                <div class="close">X</div>
+                <form action="" style="color:#212529">
+                   
+                       
+                            <div class="form-row" style="display:flex; padding-bottom: 10px;padding-left: 8px;">
+                            <div class="form-group" style="margin-bottom: 16px; ">
+                                    <label for="exampleInputEmail1">Họ Tên</label>
+                                    <input type="text" class="form-control" style="width:220px" placeholder="'.$hc['hoten'].'">
+                            </div>  
+                            <div class="form-group" style="margin-bottom: 16px;padding-left: 20px; ">
+                                    <label for="exampleInputEmail1">Cmnd</label>
+                                    <input type="text" class="form-control" style="width:210px;" placeholder="'.$hc['cmnd'].'">
+                            </div>
+                        </div>    
+                        <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom: 20px ">
+                                <label for="exampleInputEmail1">ID</label>
+                                <input type="text" class="form-control" style="width:455px; margin-left: 55px;" placeholder="'.$hc['id_hochieu'].'">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom:20px ">
+                                <label for="exampleInputEmail1">SĐT</label>
+                                <input type="text" class="form-control" style="width:455px; margin-left: 45px;" placeholder="'.$hc['sdt'].'">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom: 20px">
+                                <label for="exampleInputEmail1">Thường Trú</label>
+                                <input type="text" class="form-control" style="width:450px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 16px;padding-left: 20px; padding-bottom:20px">
+                                <label for="exampleInputEmail1">Tạm Trú</label>
+                                <input type="text" class="form-control" style="width:450px; margin-left: 25px;">
+                        </div>
+                          
+                 
+                    ?>
+                    
+                 
+                </form>      
+            </div>
+        </div>
+
+    <script type="text/javascript">
+        document.getElementById('button').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+        document.getElementById('button2').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+    </script>
     </body>
     </html>

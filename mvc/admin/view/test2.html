@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<a href="" style="float:left;color:white;border-color: #033C73" type="button" class="tooltip" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+    <i class="fas fa-info-circle fa-2x">
+        <span class="tooltiptext tooltip-right">THÔNG TIN</span></i></a>
+        
+      </a>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Thông Tin Đăng Ký</h5>
+              <a class="tooltip" type="button"  class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </a>
+            </div>
+            <a class="tooltip"  href="" style="float:left;color:white;border-color: #033C73"><i class="fas fa-info-circle fa-2x">
+              <span class="tooltiptext tooltip-right">THÔNG TIN</span></i></a>
+                                                    '
+            <div class="modal-body">
+                    <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Họ Tên</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Cmnd</label>
+                                <input type="password" class="form-control" id="inputPassword4" >
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">SĐT</label>
+                              <input type="text" class="form-control" id="inputAddress" >
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress2">Email</label>
+                              <input type="text" class="form-control" id="inputAddress2">
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Thường Trú</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Tạm Trú</label>
+                                <input type="password" class="form-control" id="inputPassword4" >
+                              </div>
+                              
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Address</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputState">Tôn giáo</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Đạo Phật</option>
+                                  <option>Đạo Chúa</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">ID</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+                        </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
+</body>
+</html>

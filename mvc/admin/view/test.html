@@ -5,27 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
 <style>
-body {
-    text-align: center;
-}
- 
-.tooltip {
+    .tooltip {
     position: relative; 
     display: inline-block;
-    border-bottom: 1px dotted black; 
- 
     margin: auto;
-    width: 150px;
+    width: 70px;
     height: 35px;
     line-height: 35px;
-    background: yellow;
     display: block;
-    margin-top: 20px;
+
 }
- 
-.tooltip .tooltiptext {
+
+.tooltiptext {
     visibility: hidden;
     position: absolute;
     width: 120px;
@@ -43,11 +37,12 @@ body {
     visibility: visible;
     opacity: 1;
 }
-.tooltip-top {
+
+.tooltip-right {
     bottom: 120%;
-    left: 10%;
+    left: -30%;
 }
-.tooltip-top::after {
+.tooltip-right::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -57,74 +52,91 @@ body {
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-.tooltip-right {
-    left: 110%;
-    top: 7%;
-}
-.tooltip-right::after{
-    content: "";
+
+.close{
     position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent #555 transparent transparent;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
-.tooltip-bottom {
-    top: 120%;
-    left: 10%;
+
+.form-control{
+    width: 45%;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
 }
-.tooltip .tooltip-bottom::after {
-    content: "";
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #555 transparent;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
-.tooltip-left {
-    right: 110%;
-    top: -10%;
+
+.modal-content{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
 }
-.tooltip-left::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent #555;
-}
-        </style>
+</style>
 <body>
-                
-        <a class="tooltip">
-                Top!
-                <span class="tooltiptext tooltip-top">Tooltip Top!</span>
-            </a>
-            <div class="tooltip">
-                Bottom!
-                <span class="tooltiptext tooltip-bottom">Tooltip Bottom!</span>
+        <a href="#" class="tooltip" id="button"  ><i class="fas fa-info-circle fa-2x"><span class="tooltiptext tooltip-right">THÔNG TIN</span></i></a>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <h2 style="border-bottom: 1px solid rgba(131, 129, 129, 0.7);">Thông Tin Đăng Ký</h2>
+                <div class="close">X</div>
+                <form action="">
+                    <div class="form-row" style="display:flex; padding-bottom: 10px;padding-left: 20px;">
+                        <div class="form-group" style="margin-bottom: 16px; ">
+                                <label for="exampleInputEmail1">Họ Tên</label>
+                                <input type="text" class="form-control" style="width:220px">
+                        </div>  
+                        <div class="form-group" style="margin-bottom: 16px;padding-left: 20px; ">
+                                <label for="exampleInputEmail1">Cmnd</label>
+                                <input type="text" class="form-control" style="width:210px;">
+                        </div>
+                    </div>    
+                    <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom: 20px ">
+                            <label for="exampleInputEmail1">ID</label>
+                            <input type="text" class="form-control" style="width:455px; margin-left: 55px;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom:20px ">
+                            <label for="exampleInputEmail1">SĐT</label>
+                            <input type="text" class="form-control" style="width:455px; margin-left: 45px;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;padding-left: 20px;padding-bottom: 20px">
+                            <label for="exampleInputEmail1">Thường Trú</label>
+                            <input type="text" class="form-control" style="width:450px;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;padding-left: 20px; padding-bottom:20px">
+                            <label for="exampleInputEmail1">Tạm Trú</label>
+                            <input type="text" class="form-control" style="width:450px; margin-left: 25px;">
+                    </div>
+                </form>      
             </div>
-            <div class="tooltip">
-                Left!
-                <span class="tooltiptext tooltip-left">Tooltip Left!</span>
-            </div>
-            <div class="tooltip">
-                Right!
-                <span class="tooltiptext tooltip-right">Tooltip Right!</span>
-            </div>
-            if($form['status']==0)
-            {
-                $status = '<div style="text-align:center;color:white;background-color:#C71C22;width:50px;height:45px;font-size:12px;border-radius:10px">ĐAang Chờ</div>';
-            }
-            else
-            {
-                $status = '<div style="text-align:center;color:white;background-color:#C71C22;width:50px;height:45px;font-size:12px;border-radius:10px">hủy bỏ</div>';
-            }
+        </div>
+
+    <script type="text/javascript">
+        document.getElementById('button').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click',function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
